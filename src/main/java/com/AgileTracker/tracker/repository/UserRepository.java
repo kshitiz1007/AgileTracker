@@ -1,4 +1,8 @@
 package com.AgileTracker.tracker.repository;
 
-public class UserRepository {
+import com.AgileTracker.tracker.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+
 }
